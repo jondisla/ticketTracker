@@ -1,5 +1,76 @@
+$white2: #d3d6dc;
+$white: #f6f7f7;
+$lightblue: #a4cce9;
+$darkblue: #255381;
+$blue: #255381;
+$gray: rgb(175, 175, 175);
+$text: rgb(48, 48, 48);
+
+.sidebar {
+    background: #324753;
+    width: 250px;
+    padding: 70px 0;
+    position: fixed;
+    height: 100vh;
+    ul {
+        list-style-type: none;
+        padding: 0 20px 0 20px;
+    }
+    li {
+        color: $white;
+        font-size: 20px;
+    }
+}
+
 .navbar-brand {
     img {
         width: 50px;
+    }
+}
+
+.wrapper {
+    color: $text;
+    margin-left: 290px;
+    padding: 70px 0 0 0;
+    .simpleTicket {
+        padding: 20px;
+        width: 97%;
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        .timestamp {
+            color: $gray;
+            grid-column: 1;
+        }
+        h4 {
+            grid-column: 1;
+        }
+        .details {
+            padding: 20px 0 0 0;
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                padding: 0 10px 0 0;
+            }
+        }
+        .divider {
+            width: 100%;
+            border-bottom: 1px solid $gray;
+            grid-column: 1/4;
+        }
+        .buttons {
+            grid-column: 2;
+            grid-row: 1;
+            justify-self: end;
+            ul {
+                list-style-type: none;
+            }
+            li {
+                padding: 0 10px 0 0;
+                display: inline-block;
+            }
+        }
     }
 }

@@ -10933,7 +10933,82 @@ a.text-dark:focus {
   }
 }
 
+.sidebar {
+  background: #324753;
+  width: 250px;
+  padding: 70px 0;
+  position: fixed;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0 20px 0 20px;
+}
+
+.sidebar li {
+  color: #f6f7f7;
+  font-size: 20px;
+}
+
 .navbar-brand img {
   width: 50px;
+}
+
+.wrapper {
+  color: #303030;
+  margin-left: 290px;
+  padding: 70px 0 0 0;
+}
+
+.wrapper .simpleTicket {
+  padding: 20px;
+  width: 97%;
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
+
+.wrapper .simpleTicket .timestamp {
+  color: #afafaf;
+  grid-column: 1;
+}
+
+.wrapper .simpleTicket h4 {
+  grid-column: 1;
+}
+
+.wrapper .simpleTicket .details {
+  padding: 20px 0 0 0;
+}
+
+.wrapper .simpleTicket .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wrapper .simpleTicket .details li {
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+
+.wrapper .simpleTicket .divider {
+  width: 100%;
+  border-bottom: 1px solid #afafaf;
+  grid-column: 1/4;
+}
+
+.wrapper .simpleTicket .buttons {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.wrapper .simpleTicket .buttons ul {
+  list-style-type: none;
+}
+
+.wrapper .simpleTicket .buttons li {
+  padding: 0 10px 0 0;
+  display: inline-block;
 }
 
