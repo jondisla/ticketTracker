@@ -3,15 +3,16 @@
 @section('content')
 @include('layouts.sidebar')
 <div class="wrapper">
+    <h2>Open issues</h2>
     <div class="minimizedCard">
         {{-- <img class="card-img-top" src="holder.js/100px180/" alt=""> --}}
         <div class="small timestamp">Customer Name  |  DATE
         </div>
         <div class="buttons">
             <ul>
-                <li>D</li>
-                <li>D</li>
-                <li>D</li>
+                <li><img src="img/danger.png" alt=""></li>
+                <li><img src="img/clock.png" alt=""></li>
+                <li><img src="img/checkmark.png" alt=""></li>
             </ul>
         </div>
         <h4 class="card-title">My Printer is not working</h4>
@@ -24,7 +25,7 @@
                 Department:
             </div>
             <div class="details">
-                +
+                <img src="img/plus.png" alt="">
             </div>
         </div>
         

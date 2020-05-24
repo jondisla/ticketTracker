@@ -10969,14 +10969,14 @@ a.text-dark:focus {
 .wrapper .minimizedCard {
   width: 97%;
   background: white;
-  border: 1px solid #afafaf;
+  border: 1px solid #c6c6c6;
   border-radius: 5px;
   display: grid;
   grid-template-columns: 8fr 4fr;
 }
 
 .wrapper .minimizedCard .timestamp {
-  color: #afafaf;
+  color: #c6c6c6;
   grid-column: 1;
   padding: 20px;
 }
@@ -10997,6 +10997,10 @@ a.text-dark:focus {
   display: inline-block;
 }
 
+.wrapper .minimizedCard .buttons li img {
+  width: 30px;
+}
+
 .wrapper .minimizedCard .card-title {
   grid-column: 1;
   padding: 0 20px;
@@ -11004,12 +11008,13 @@ a.text-dark:focus {
 
 .wrapper .minimizedCard .divider {
   width: 100%;
-  border-bottom: 1px solid #afafaf;
+  border-bottom: 1px solid #c6c6c6;
   grid-column: 1/4;
 }
 
 .wrapper .minimizedCard .info {
-  background-color: #6c8eaf;
+  background-color: #255381;
+  color: white;
   grid-column: 1/4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -11026,5 +11031,10 @@ a.text-dark:focus {
   justify-self: end;
   color: white;
   font-weight: bolder;
+}
+
+.wrapper .minimizedCard .info .details img {
+  padding: 20px 0;
+  width: 20px;
 }
 

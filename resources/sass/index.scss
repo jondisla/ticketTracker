@@ -3,7 +3,7 @@ $white: #f6f7f7;
 $lightblue: #a4cce9;
 $darkblue: #255381;
 $blue: #6c8eaf;
-$gray: rgb(175, 175, 175);
+$gray: rgb(198, 198, 198);
 $text: rgb(48, 48, 48);
 
 .sidebar {
@@ -59,6 +59,9 @@ $text: rgb(48, 48, 48);
             li {
                 padding: 0 10px 0 0;
                 display: inline-block;
+                img {
+                    width: 30px;
+                }
             }
         }
         .card-title {
@@ -71,8 +74,8 @@ $text: rgb(48, 48, 48);
             grid-column: 1/4;
         }
         .info {
-            background-color: $blue;
-            // padding: 20px;
+            background-color: $darkblue;
+            color: white;
             grid-column: 1/4;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -86,6 +89,10 @@ $text: rgb(48, 48, 48);
                 justify-self: end;
                 color: white;
                 font-weight: bolder;
+                img {
+                    padding: 20px 0;
+                    width: 20px;
+                }
             }
         }
     }
