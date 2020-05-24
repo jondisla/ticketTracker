@@ -10934,7 +10934,7 @@ a.text-dark:focus {
 }
 
 .sidebar {
-  background: #324753;
+  background: #255381;
   width: 250px;
   padding: 70px 0;
   position: fixed;
@@ -10973,12 +10973,13 @@ a.text-dark:focus {
   grid-column: 1;
 }
 
-.wrapper .simpleTicket h4 {
+.wrapper .simpleTicket .card-title {
   grid-column: 1;
 }
 
 .wrapper .simpleTicket .details {
-  padding: 20px 0 0 0;
+  background-color: #6c8eaf;
+  grid-column: 1/4;
 }
 
 .wrapper .simpleTicket .details ul {
@@ -11008,6 +11009,60 @@ a.text-dark:focus {
 }
 
 .wrapper .simpleTicket .buttons li {
+  padding: 0 10px 0 0;
+  display: inline-block;
+}
+
+.wrapper .testcard {
+  width: 97%;
+  background: white;
+  border: 1px solid #afafaf;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
+
+.wrapper .testcard .timestamp {
+  color: #afafaf;
+  grid-column: 1;
+}
+
+.wrapper .testcard .card-title {
+  grid-column: 1;
+}
+
+.wrapper .testcard .details {
+  background-color: #6c8eaf;
+  grid-column: 1/4;
+}
+
+.wrapper .testcard .details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wrapper .testcard .details li {
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+
+.wrapper .testcard .divider {
+  width: 100%;
+  border-bottom: 1px solid #afafaf;
+  grid-column: 1/4;
+}
+
+.wrapper .testcard .buttons {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+}
+
+.wrapper .testcard .buttons ul {
+  list-style-type: none;
+}
+
+.wrapper .testcard .buttons li {
   padding: 0 10px 0 0;
   display: inline-block;
 }

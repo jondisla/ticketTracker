@@ -2,12 +2,12 @@ $white2: #d3d6dc;
 $white: #f6f7f7;
 $lightblue: #a4cce9;
 $darkblue: #255381;
-$blue: #255381;
+$blue: #6c8eaf;
 $gray: rgb(175, 175, 175);
 $text: rgb(48, 48, 48);
 
 .sidebar {
-    background: #324753;
+    background: $darkblue;
     width: 250px;
     padding: 70px 0;
     position: fixed;
@@ -41,11 +41,60 @@ $text: rgb(48, 48, 48);
             color: $gray;
             grid-column: 1;
         }
-        h4 {
+        .card-title {
             grid-column: 1;
         }
         .details {
-            padding: 20px 0 0 0;
+            background-color: $blue;
+            // padding: 20px 0 0 0;
+            grid-column: 1/4;
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                padding: 0 10px 0 0;
+            }
+        }
+        .divider {
+            width: 100%;
+            border-bottom: 1px solid $gray;
+            grid-column: 1/4;
+        }
+        .buttons {
+            grid-column: 2;
+            grid-row: 1;
+            justify-self: end;
+            ul {
+                list-style-type: none;
+            }
+            li {
+                padding: 0 10px 0 0;
+                display: inline-block;
+            }
+        }
+    }
+
+    .testcard {
+        width: 97%;
+        background: white;
+        border: 1px solid $gray;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+        .timestamp {
+            color: $gray;
+            grid-column: 1;
+        }
+        .card-title {
+            grid-column: 1;
+        }
+        .details {
+            background-color: $blue;
+            // padding: 20px 0 0 0;
+            grid-column: 1/4;
+
             ul {
                 list-style-type: none;
                 padding: 0;
