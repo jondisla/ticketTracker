@@ -10936,7 +10936,7 @@ a.text-dark:focus {
 .sidebar {
   background: #255381;
   width: 250px;
-  padding: 70px 0;
+  padding: 55px 0;
   position: fixed;
   height: 100vh;
 }
@@ -10949,6 +10949,11 @@ a.text-dark:focus {
 .sidebar li {
   color: #f6f7f7;
   font-size: 20px;
+  line-height: 50px;
+}
+
+.sidebar li img {
+  width: 30px;
 }
 
 .navbar-brand img {
@@ -10961,59 +10966,7 @@ a.text-dark:focus {
   padding: 70px 0 0 0;
 }
 
-.wrapper .simpleTicket {
-  padding: 20px;
-  width: 97%;
-  display: grid;
-  grid-template-columns: 8fr 4fr;
-}
-
-.wrapper .simpleTicket .timestamp {
-  color: #afafaf;
-  grid-column: 1;
-}
-
-.wrapper .simpleTicket .card-title {
-  grid-column: 1;
-}
-
-.wrapper .simpleTicket .details {
-  background-color: #6c8eaf;
-  grid-column: 1/4;
-}
-
-.wrapper .simpleTicket .details ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.wrapper .simpleTicket .details li {
-  display: inline-block;
-  padding: 0 10px 0 0;
-}
-
-.wrapper .simpleTicket .divider {
-  width: 100%;
-  border-bottom: 1px solid #afafaf;
-  grid-column: 1/4;
-}
-
-.wrapper .simpleTicket .buttons {
-  grid-column: 2;
-  grid-row: 1;
-  justify-self: end;
-}
-
-.wrapper .simpleTicket .buttons ul {
-  list-style-type: none;
-}
-
-.wrapper .simpleTicket .buttons li {
-  padding: 0 10px 0 0;
-  display: inline-block;
-}
-
-.wrapper .testcard {
+.wrapper .minimizedCard {
   width: 97%;
   background: white;
   border: 1px solid #afafaf;
@@ -11022,48 +10975,56 @@ a.text-dark:focus {
   grid-template-columns: 8fr 4fr;
 }
 
-.wrapper .testcard .timestamp {
+.wrapper .minimizedCard .timestamp {
   color: #afafaf;
   grid-column: 1;
+  padding: 20px;
 }
 
-.wrapper .testcard .card-title {
-  grid-column: 1;
+.wrapper .minimizedCard .buttons {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  padding: 20px;
 }
 
-.wrapper .testcard .details {
-  background-color: #6c8eaf;
-  grid-column: 1/4;
-}
-
-.wrapper .testcard .details ul {
+.wrapper .minimizedCard .buttons ul {
   list-style-type: none;
-  padding: 0;
 }
 
-.wrapper .testcard .details li {
-  display: inline-block;
+.wrapper .minimizedCard .buttons li {
   padding: 0 10px 0 0;
+  display: inline-block;
 }
 
-.wrapper .testcard .divider {
+.wrapper .minimizedCard .card-title {
+  grid-column: 1;
+  padding: 0 20px;
+}
+
+.wrapper .minimizedCard .divider {
   width: 100%;
   border-bottom: 1px solid #afafaf;
   grid-column: 1/4;
 }
 
-.wrapper .testcard .buttons {
-  grid-column: 2;
-  grid-row: 1;
+.wrapper .minimizedCard .info {
+  background-color: #6c8eaf;
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.wrapper .minimizedCard .info .info1 {
+  padding: 20px;
+}
+
+.wrapper .minimizedCard .info .details {
+  grid-column: 4;
+  padding: 0 30px;
+  border-left: 1px solid white;
   justify-self: end;
-}
-
-.wrapper .testcard .buttons ul {
-  list-style-type: none;
-}
-
-.wrapper .testcard .buttons li {
-  padding: 0 10px 0 0;
-  display: inline-block;
+  color: white;
+  font-weight: bolder;
 }
 
