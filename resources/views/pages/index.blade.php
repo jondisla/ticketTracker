@@ -24,11 +24,13 @@
             <div class=info2" style="padding:20px 0">
                 Department:
             </div>
-            <div class="details">
+            <div class="details" id="plusBtn">
                 <img src="img/plus.png" alt="">
             </div>
         </div>
-        
+        <div class="ticketDetail">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia ad blanditiis, maiores eveniet doloremque a? Nostrum ex, cupiditate incidunt vel voluptatum quia illo, alias magni quae, aperiam recusandae fugiat! Ipsum.
+        </div>
     </div>
 </div>
 

@@ -10943,17 +10943,28 @@ a.text-dark:focus {
 
 .sidebar ul {
   list-style-type: none;
-  padding: 0 20px 0 20px;
+  padding: 0;
 }
 
 .sidebar li {
   color: #f6f7f7;
   font-size: 20px;
   line-height: 50px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.sidebar li:hover {
+  transition: all 0.5s ease;
+  background: #6c8eaf;
 }
 
 .sidebar li img {
   width: 30px;
+}
+
+.sidebar a {
+  text-decoration: none;
 }
 
 .navbar-brand img {
@@ -10986,6 +10997,8 @@ a.text-dark:focus {
   grid-row: 1;
   justify-self: end;
   padding: 20px;
+  width: 250px;
+  height: 50px;
 }
 
 .wrapper .minimizedCard .buttons ul {
@@ -10999,6 +11012,16 @@ a.text-dark:focus {
 
 .wrapper .minimizedCard .buttons li img {
   width: 30px;
+}
+
+.wrapper .minimizedCard .buttons li:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.wrapper .minimizedCard .buttons li:hover img {
+  transition: all 0.5s ease;
+  width: 34px;
 }
 
 .wrapper .minimizedCard .card-title {
@@ -11033,8 +11056,21 @@ a.text-dark:focus {
   font-weight: bolder;
 }
 
+.wrapper .minimizedCard .info .details:hover {
+  background-color: #6c8eaf;
+}
+
 .wrapper .minimizedCard .info .details img {
   padding: 20px 0;
   width: 20px;
+}
+
+.wrapper .minimizedCard .info .details.active {
+  background: #6c8eaf;
+}
+
+.wrapper .ticketDetail {
+  padding: 20px;
+  display: none;
 }
 
