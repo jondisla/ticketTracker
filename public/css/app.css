@@ -10933,17 +10933,21 @@ a.text-dark:focus {
   }
 }
 
+.content {
+  padding: 130px 0 0 0;
+}
+
 .sidebar {
   background: #255381;
   width: 250px;
-  padding: 55px 0;
+  top: 0;
   position: fixed;
   height: 100vh;
 }
 
 .sidebar ul {
   list-style-type: none;
-  padding: 0;
+  padding: 125px 0;
 }
 
 .sidebar li {
@@ -10967,14 +10971,27 @@ a.text-dark:focus {
   text-decoration: none;
 }
 
-.navbar-brand img {
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .navbar-brand img {
   width: 50px;
+}
+
+.navbar .newTicketBtn button {
+  color: #f6f7f7;
+}
+
+.navbar .newTicketBtn a {
+  text-decoration: none;
 }
 
 .wrapper {
   color: #303030;
   margin-left: 290px;
-  padding: 70px 0 0 0;
 }
 
 .wrapper .minimizedCard {
@@ -10984,6 +11001,7 @@ a.text-dark:focus {
   border-radius: 5px;
   display: grid;
   grid-template-columns: 8fr 4fr;
+  margin-bottom: 20px;
 }
 
 .wrapper .minimizedCard .timestamp {
@@ -11069,8 +11087,13 @@ a.text-dark:focus {
   background: #6c8eaf;
 }
 
-.wrapper .ticketDetail {
+.wrapper .hidden {
   padding: 20px;
   display: none;
+}
+
+.ticketForm {
+  width: 90%;
+  margin: 0 auto;
 }
 

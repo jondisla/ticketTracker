@@ -6,16 +6,20 @@ $blue: #6c8eaf;
 $gray: rgb(198, 198, 198);
 $text: rgb(48, 48, 48);
 
+.content {
+    padding: 130px 0 0 0;
+}
 ////sidebar
 .sidebar {
     background: $darkblue;
     width: 250px;
-    padding: 55px 0;
+    top: 0;
+    // padding: 125px 0;
     position: fixed;
     height: 100vh;
     ul {
         list-style-type: none;
-        padding: 0;
+        padding: 125px 0;
     }
     li {
         color: $white;
@@ -39,10 +43,22 @@ $text: rgb(48, 48, 48);
         text-decoration: none;
     }
 }
-
-.navbar-brand {
-    img {
-        width: 50px;
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    .navbar-brand {
+        img {
+            width: 50px;
+        }
+    }
+    .newTicketBtn {
+        button {
+            color: $white;
+        }
+        a {
+            text-decoration: none;
+        }
     }
 }
 
@@ -51,7 +67,6 @@ $text: rgb(48, 48, 48);
 .wrapper {
     color: $text;
     margin-left: 290px;
-    padding: 70px 0 0 0;
     .minimizedCard {
         width: 97%;
         background: white;
@@ -59,6 +74,7 @@ $text: rgb(48, 48, 48);
         border-radius: 5px;
         display: grid;
         grid-template-columns: 8fr 4fr;
+        margin-bottom: 20px;
         .timestamp {
             color: $gray;
             grid-column: 1;
@@ -131,7 +147,7 @@ $text: rgb(48, 48, 48);
             }
         }
     }
-    .ticketDetail {
+    .hidden {
         padding: 20px;
         display: none;
     }

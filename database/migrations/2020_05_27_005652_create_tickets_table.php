@@ -19,7 +19,7 @@ class CreateTicketsTable extends Migration
             $table->integer('tel');
             $table->string('team', 100);
             $table->text('description');
-            $table->timestamps();
+            $table->timestamp('created_at');
         });
     }
 

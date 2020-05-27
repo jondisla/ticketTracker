@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Tickets;
 
 class TicketsController extends Controller
 {
@@ -13,7 +14,8 @@ class TicketsController extends Controller
      */
     public function index()
     {
-        //
+        $tickets = Tickets::all();
+        return view('tickets.index')->with('tickets', $tickets);
     }
 
     /**
@@ -23,7 +25,7 @@ class TicketsController extends Controller
      */
     public function create()
     {
-        //
+        return view('tickets.create');
     }
 
     /**
@@ -34,7 +36,12 @@ class TicketsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'name'=>'required',
+            'tam' => 'required',
+            'tel' => 'required',
+            'description' => 'required'
+        ]);
     }
 
     /**

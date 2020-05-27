@@ -49831,9 +49831,31 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
-  $("#plusBtn").click(function () {
-    $(".ticketDetail").toggle("blind");
-    $(".details").toggleClass("active");
+  $(".details[id]").each(function () {
+    var plusBtnArr = [];
+    plusBtnArr.push(this);
+
+    var _loop = function _loop(i) {
+      elementId = plusBtnArr; // console.log(element);
+      // $(elementId).click(() => {
+      //     // var test = $(this).attr("id");
+      //     console.log(elementId);
+      // });
+
+      var element = $(elementId);
+      element.click(function () {
+        var ticketId = element.attr("data-ticketId");
+        console.log(ticketId);
+        var ticketDetail = $("#ticketDetail-".concat(ticketId));
+        ticketDetail.toggleClass("hidden");
+      });
+    };
+
+    for (var i = 0; i < plusBtnArr.length; i++) {
+      var elementId;
+
+      _loop(i);
+    }
   });
 });
 
