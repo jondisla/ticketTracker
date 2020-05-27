@@ -38,10 +38,18 @@ class TicketsController extends Controller
     {
         $this->validate($request,[
             'name'=>'required',
-            'tam' => 'required',
+            'team' => 'required',
             'tel' => 'required',
             'description' => 'required'
         ]);
+
+        $ticket = new Tickets;
+        $ticket->name = $request->input('name');
+        $ticket->team = $request->input('team');
+        $ticket->tel = $request->input('tel');
+        $ticket->description = $request->input('description');
+
+        return redirect('tickets');
     }
 
     /**
