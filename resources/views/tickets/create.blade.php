@@ -7,28 +7,36 @@
     <div class="ticketForm">
         {!! Form::open(['action' => 'TicketsController@store', 'method' => 'POST']) !!}
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="form-group">
-                    {{Form::label('name', 'Name')}}
-                    {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Short ticket name', 'required'])}}
+                    {{Form::label('shortname', 'Ticket Name')}}
+                    {{Form::text('shortname', '', ['class' => 'form-control', 'placeholder' => 'Short ticket name'])}}
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
                     {{Form::label('team', 'Team')}}
-                    {{Form::text('team', '', ['class' => 'form-control', 'placeholder' => 'IT, Help Desk, Logistics', 'required'])}}
+                    {{Form::text('team', '', ['class' => 'form-control', 'placeholder' => 'IT, Help Desk, Logistics'])}}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="form-group">
+                    {{Form::label('name', 'Name')}}
+                    {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Customer name',])}}
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
                     {{Form::label('tel', 'Contact Number')}}
-                    {{Form::text('tel', '', ['class' => 'form-control', 'placeholder' => 'Contact Number', 'required'])}}
+                    {{Form::text('tel', '', ['class' => 'form-control', 'placeholder' => 'Ex: 1234567890'])}}
                 </div>
             </div>
         </div>
         <div class="form-group">
             {{Form::label('description', 'Description')}}
-            {{Form::textarea('description', '', ['class' => 'form-control', 'placeholder' => 'Description', 'required'])}}
+            {{Form::textarea('description', '', ['class' => 'form-control', 'placeholder' => 'Description'])}}
         </div>
         {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
         {!!Form::close() !!}

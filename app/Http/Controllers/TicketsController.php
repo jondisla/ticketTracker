@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Tickets;
+use DB;
 
 class TicketsController extends Controller
 {
@@ -37,19 +38,24 @@ class TicketsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'name'=>'required',
+            'shortname'=>'required',
             'team' => 'required',
             'tel' => 'required',
-            'description' => 'required'
+            'name' => 'required',
+            'description' => 'required',
         ]);
 
         $ticket = new Tickets;
-        $ticket->name = $request->input('name');
+        $ticket->shortname = $request->input('shortname');
         $ticket->team = $request->input('team');
         $ticket->tel = $request->input('tel');
+        $ticket->name = $request->input('name');
         $ticket->description = $request->input('description');
+        $ticket->created_at = $request->input('created_at');
+        // $ticket->updated_at = $request->input('updated_at');
+        $ticket->save();
 
-        return redirect('tickets');
+        return redirect('tickets')->with('success', 'Ticket Created');
     }
 
     /**

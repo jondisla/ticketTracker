@@ -15,11 +15,13 @@ class CreateTicketsTable extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 100);
+            $table->string('shortname', 100);
             $table->integer('tel');
-            $table->string('team', 100);
+            $table->string('team', 20);
+            $table->string('name');
             $table->text('description');
             $table->timestamp('created_at');
+            // $table->timestamp('updated_at');
         });
     }
 

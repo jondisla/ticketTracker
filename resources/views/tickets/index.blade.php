@@ -9,7 +9,7 @@
     <div class="minimizedCard">
         {{-- <img class="card-img-top" src="holder.js/100px180/" alt=""> --}}
         
-        <div class="small timestamp">DATE: {{$ticket->created_at}}
+        <div class="small timestamp">DATE: {{$ticket->updated_at}}
         </div>
         <div class="buttons">
             <ul>
@@ -18,7 +18,7 @@
                 <li><img src="img/checkmark.png" alt=""></li>
             </ul>
         </div>
-        <h4 class="card-title"><a href="/tickets/{{$ticket->id}}">{{$ticket->name}}</a></h4>
+        <h4 class="card-title"><a href="/tickets/{{$ticket->id}}">{{$ticket->shortname}}</a></h4>
         
         <div class="divider"></div>
         <div class="info">
@@ -29,19 +29,15 @@
                 Department: {{$ticket->team}}
             </div>
             <div class="ticketDetail hidden" id="ticketDetail-{{$ticket->id}}">
+                <p>Name: {{$ticket->name}}</p>
                 <p>Contact: {{$ticket->tel}}</p>
                 {{$ticket->description}}
             </div>
-            {{-- <div class="ticketDetail">
-                <p>Contact: {{$ticket->tel}}</p>
-                {{$ticket->description}}
-            </div> --}}
             <div class="details" id="plusBtn-{{$ticket->id}}" data-ticketId="{{$ticket->id}}">
                 <img src="img/plus.png" alt="">
             </div>
+            
         </div>
-        
-        
     </div>
     @endforeach
         @endif
