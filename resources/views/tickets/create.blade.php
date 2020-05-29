@@ -10,13 +10,13 @@
             <div class="col-sm-8">
                 <div class="form-group">
                     {{Form::label('shortname', 'Ticket Name')}}
-                    {{Form::text('shortname', '', ['class' => 'form-control', 'placeholder' => 'Short ticket name'])}}
+                    {{Form::text('shortname', '', ['class' => 'form-control', 'placeholder' => 'Printer stopped working'])}}
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
-                    {{Form::label('team', 'Team')}}
-                    {{Form::text('team', '', ['class' => 'form-control', 'placeholder' => 'IT, Help Desk, Logistics'])}}
+                    {{Form::label('department', 'Department')}}
+                    {{Form::select('department', ['IT' => 'IT', 'Support' => 'Support', 'Repair' => 'Repair'])}}
                 </div>
             </div>
         </div>

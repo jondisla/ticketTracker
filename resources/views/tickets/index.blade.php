@@ -26,7 +26,7 @@
                 Ticket ID: {{$ticket->id}}
             </div>
             <div class=info2" style="padding:20px 0">
-                Department: {{$ticket->team}}
+                Department: {{$ticket->department}}
             </div>
             <div class="ticketDetail hidden" id="ticketDetail-{{$ticket->id}}">
                 <p>Name: {{$ticket->name}}</p>

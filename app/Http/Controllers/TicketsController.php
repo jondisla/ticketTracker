@@ -39,20 +39,19 @@ class TicketsController extends Controller
     {
         $this->validate($request,[
             'shortname'=>'required',
-            'team' => 'required',
-            'tel' => 'required',
+            'department' => 'required',
+            'tel' => ['required', 'digits:10'],
             'name' => 'required',
             'description' => 'required',
         ]);
 
         $ticket = new Tickets;
         $ticket->shortname = $request->input('shortname');
-        $ticket->team = $request->input('team');
+        $ticket->department = $request->input('department');
         $ticket->tel = $request->input('tel');
         $ticket->name = $request->input('name');
         $ticket->description = $request->input('description');
         $ticket->created_at = $request->input('created_at');
-        // $ticket->updated_at = $request->input('updated_at');
         $ticket->save();
 
         return redirect('tickets')->with('success', 'Ticket Created');

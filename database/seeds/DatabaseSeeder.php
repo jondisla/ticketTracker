@@ -11,6 +11,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        DB::table('departments')->insert(array (
+            0 => 
+              array (
+                     'department' => 'IT'
+             ),
+            1 => 
+              array (
+                'department' => 'Repair'
+             ),
+         ));
     }
 }
