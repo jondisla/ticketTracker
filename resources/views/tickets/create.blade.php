@@ -15,7 +15,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
-                    {{Form::label('department', 'Department')}}
+                    {{Form::label('department', 'Department')}}<br>
                     {{Form::select('department', ['IT' => 'IT', 'Support' => 'Support', 'Repair' => 'Repair'])}}
                 </div>
             </div>

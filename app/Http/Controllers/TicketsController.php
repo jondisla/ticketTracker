@@ -65,7 +65,9 @@ class TicketsController extends Controller
      */
     public function show($id)
     {
-        //
+        $tickets = Tickets::find($id);
+
+        return view('tickets.show')->with('tickets', $tickets);
     }
 
     /**
@@ -76,7 +78,9 @@ class TicketsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $ticket = Tickets::find($id);
+
+        return view("tickets.edit")->with('ticket', $ticket);
     }
 
     /**
@@ -88,7 +92,25 @@ class TicketsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //THE BELOW IS VALIDATION FOR THE FIELDS
+        $this->validate($request, [
+            'shortname' => 'required',
+            'department' => 'required',
+            'tel' => 'required',
+            'name' => 'required',
+            'description' => 'required',
+        ]);
+        
+        $ticket = Tickets::find($id);
+        $ticket->shortname = $request->input('shortname');
+        $ticket->department = $request->input('department');
+        $ticket->tel = $request->input('tel');
+        $ticket->name = $request->input('name');
+        $ticket->description = $request->input('description');
+        $ticket->created_at = $request->input('created_at');
+        $ticket->save();
+
+        return redirect('/tickets')->with('success', 'Ticket Updated');
     }
 
     /**

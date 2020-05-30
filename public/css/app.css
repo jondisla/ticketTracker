@@ -11074,6 +11074,7 @@ a.text-dark:focus {
 
 .wrapper .minimizedCard .info .hidden {
   display: none;
+  transition: all 0.5s ease;
 }
 
 .wrapper .minimizedCard .info .details {
@@ -11096,6 +11097,10 @@ a.text-dark:focus {
 
 .wrapper .minimizedCard .info .details.active {
   background: #6c8eaf;
+}
+
+.wrapper .minimizedCard #editBtn {
+  position: fixed;
 }
 
 .ticketForm {

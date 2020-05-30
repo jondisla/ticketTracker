@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/tickets') }}">
-                    <img src="../img/ttlogo.png">
+                    <img src="../../img/ttlogo.png">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         <li class="nav-item newTicketBtn">
-                            <a href="tickets/create"><button type="button" class= "nav-link btn btn-success" style="color:white;">New Ticket</button></a>
+                            <a href="../../tickets/create"><button type="button" class= "nav-link btn btn-success" style="color:white;">New Ticket</button></a>
                         </li>
                         @guest
                             <li class="nav-item">

@@ -4,12 +4,12 @@
 @include('layouts.sidebar')
 <div class="wrapper">
     <h2>Open issues</h2>
-    @if (count($tickets) > 1)
+    @if (count($tickets) > 0)
             @foreach($tickets as $ticket)
     <div class="minimizedCard">
         {{-- <img class="card-img-top" src="holder.js/100px180/" alt=""> --}}
         
-        <div class="small timestamp">DATE: {{$ticket->updated_at}}
+        <div class="small timestamp">DATE: {{$ticket->created_at}}
         </div>
         <div class="buttons">
             <ul>

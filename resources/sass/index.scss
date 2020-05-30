@@ -135,6 +135,10 @@ $text: rgb(48, 48, 48);
             }
             .hidden {
                 display: none;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                transition: all 0.5s ease;
             }
             .details {
                 grid-column: 4;
@@ -154,6 +158,9 @@ $text: rgb(48, 48, 48);
                     background: $blue;
                 }
             }
+        }
+        #editBtn {
+            position: fixed;
         }
     }
 }
