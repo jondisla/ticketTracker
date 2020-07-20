@@ -8,6 +8,15 @@ use DB;
 
 class TicketsController extends Controller
 {
+     /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -121,6 +130,8 @@ class TicketsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $ticket = Tickets::find($id);
+        $ticket->delete();
+        return redirect('/tickets')->with('success', 'Ticket Deleted');
     }
 }

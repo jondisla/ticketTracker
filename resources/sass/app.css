@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+.content {
+  padding: 130px 0 0 0;
+}
+
+.sidebar {
+  background: #255381;
+  width: 250px;
+  top: 0;
+  position: fixed;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 125px 0;
+}
+
+.sidebar li {
+  color: #f6f7f7;
+  font-size: 20px;
+  line-height: 50px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.sidebar li:hover {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #6c8eaf;
+}
+
+.sidebar li img {
+  width: 30px;
+}
+
+.sidebar a {
+  text-decoration: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .navbar-brand img {
+  width: 50px;
+}
+
+.navbar .newTicketBtn button {
+  color: #f6f7f7;
+}
+
+.navbar .newTicketBtn a {
+  text-decoration: none;
+}
+
+.wrapper {
+  color: #303030;
+  margin-left: 290px;
+}
+
+.wrapper .minimizedCard {
+  width: 97%;
+  background: white;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8fr 4fr;
+      grid-template-columns: 8fr 4fr;
+  margin-bottom: 20px;
+}
+
+.wrapper .minimizedCard .timestamp {
+  color: #c6c6c6;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding: 20px;
+}
+
+.wrapper .minimizedCard .buttons {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding: 20px 50px;
+  width: 250px;
+  height: 50px;
+}
+
+.wrapper .minimizedCard .buttons ul {
+  list-style-type: none;
+}
+
+.wrapper .minimizedCard .buttons li {
+  padding: 0 10px 0 0;
+  display: inline-block;
+  right: 0;
+}
+
+.wrapper .minimizedCard .buttons li img {
+  width: 30px;
+}
+
+.wrapper .minimizedCard .buttons li:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+.wrapper .minimizedCard .buttons li:hover img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 34px;
+}
+
+.wrapper .minimizedCard .card-title {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  padding: 0 20px;
+}
+
+.wrapper .minimizedCard .divider {
+  width: 100%;
+  border-bottom: 1px solid #c6c6c6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.wrapper .minimizedCard .info {
+  background-color: #255381;
+  color: white;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.wrapper .minimizedCard .info .info1 {
+  padding: 20px;
+}
+
+.wrapper .minimizedCard .info .ticketDetail {
+  padding: 20px;
+  border-top: 3px solid #f6f7f7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+.wrapper .minimizedCard .info .hidden {
+  display: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.wrapper .minimizedCard .info .details {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  padding: 0 30px;
+  border-left: 1px solid white;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  color: white;
+  font-weight: bolder;
+}
+
+.wrapper .minimizedCard .info .details:hover {
+  background-color: #6c8eaf;
+}
+
+.wrapper .minimizedCard .info .details img {
+  padding: 20px 0;
+  width: 20px;
+}
+
+.wrapper .minimizedCard .info .details.active {
+  background: #6c8eaf;
+}
+
+.wrapper .minimizedCard #editBtn {
+  position: fixed;
+}
+
+.ticketForm {
+  width: 90%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=app.css.map */

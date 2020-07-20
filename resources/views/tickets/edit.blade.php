@@ -37,10 +37,10 @@
             {{Form::label('description', 'Description')}}
             {{Form::textarea('description', $ticket->description, ['class' => 'form-control', 'placeholder' => 'Description'])}}
         </div>
-            <div class="editBtns">
+            <div class="editBtns" style = "display:grid;grid-template-columns:100px 100px">
                 <div class="editSubmitBtn">
                     {{Form::hidden('_method', 'PUT')}}
-                    {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+                    {{Form::submit('Edit', ['class' => 'btn btn-primary'])}}
                     {!!Form::close() !!}
                 </div>
                 <div class="editDeleteBtn">
