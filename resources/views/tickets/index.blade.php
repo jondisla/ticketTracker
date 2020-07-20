@@ -14,8 +14,8 @@
         <div class="buttons">
             <ul>
                 <li><img src="img/danger.png" alt=""></li>
-                <li><img src="img/clock.png" alt=""></li>
-                <li><img src="img/checkmark.png" alt=""></li>
+                {{-- <li><img src="img/clock.png" alt=""></li> --}}
+                <li><img src="img/notcompleted.png" alt=""></li>
             </ul>
         </div>
         <h4 class="card-title"><a href="/tickets/{{$ticket->id}}">{{$ticket->shortname}}</a></h4>

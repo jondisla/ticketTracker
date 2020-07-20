@@ -11014,7 +11014,7 @@ a.text-dark:focus {
   grid-column: 2;
   grid-row: 1;
   justify-self: end;
-  padding: 20px;
+  padding: 20px 50px;
   width: 250px;
   height: 50px;
 }
@@ -11026,6 +11026,7 @@ a.text-dark:focus {
 .wrapper .minimizedCard .buttons li {
   padding: 0 10px 0 0;
   display: inline-block;
+  right: 0;
 }
 
 .wrapper .minimizedCard .buttons li img {
