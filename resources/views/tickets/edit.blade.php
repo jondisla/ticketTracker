@@ -37,9 +37,20 @@
             {{Form::label('description', 'Description')}}
             {{Form::textarea('description', $ticket->description, ['class' => 'form-control', 'placeholder' => 'Description'])}}
         </div>
-        {{Form::hidden('_method', 'PUT')}}
-        {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
-        {!!Form::close() !!}
+            <div class="editBtns">
+                <div class="editSubmitBtn">
+                    {{Form::hidden('_method', 'PUT')}}
+                    {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
+                    {!!Form::close() !!}
+                </div>
+                <div class="editDeleteBtn">
+                    {!!Form::open(['action' => ['TicketsController@destroy',$ticket->id], 'method' => 'POST']) !!}
+                    {{Form::hidden('_method', 'DELETE')}}
+                    {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                    {!!Form::close() !!}
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
