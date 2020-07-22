@@ -3,8 +3,8 @@
 @section('content')
 @include('layouts.sidebar')
 <div class="wrapper">
-    <h2>Open issues</h2>
     @if (count($tickets) > 0)
+    <h2>Open issues</h2>
             @foreach($tickets as $ticket)
     <div class="minimizedCard">
         {{-- <img class="card-img-top" src="holder.js/100px180/" alt=""> --}}
@@ -13,9 +13,9 @@
         </div>
         <div class="buttons">
             <ul>
-                <li><img src="img/danger.png" alt=""></li>
+                <li><img src="img/danger.png" alt="Pending"></li>
                 {{-- <li><img src="img/clock.png" alt=""></li> --}}
-                <li><img src="img/notcompleted.png" alt=""></li>
+                <li><img src="img/notcompleted.png" alt="Not Completed"></li>
             </ul>
         </div>
         <h4 class="card-title"><a href="/tickets/{{$ticket->id}}">{{$ticket->shortname}}</a></h4>
@@ -40,8 +40,9 @@
         </div>
     </div>
     @endforeach
+    @else
+    <h2>No Open issues</h2>
         @endif
 </div>
-
 
 @endsection

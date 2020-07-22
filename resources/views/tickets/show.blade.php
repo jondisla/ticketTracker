@@ -10,9 +10,9 @@
         </div>
         <div class="buttons">
             <ul>
-                <li><img src="../img/danger.png" alt=""></li>
+                <li><img src="../img/danger.png" alt="Pending"></li>
                 <li></li>
-                <li><img src="../img/checkmark.png" alt=""></li>
+                <li><img src="../img/checkmark.png" alt="Viewed"></li>
             </ul>
         </div>
         <h4 class="card-title"><a href="/tickets/{{$tickets->id}}">{{$tickets->shortname}}</a></h4>
