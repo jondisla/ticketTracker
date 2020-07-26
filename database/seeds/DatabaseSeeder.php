@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('departments')->insert(array (
+        DB::table('departments')->create(array (
             0 => 
               array (
                      'department' => 'IT'
