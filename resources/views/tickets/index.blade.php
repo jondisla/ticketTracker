@@ -9,7 +9,7 @@
     <div class="minimizedCard">
         {{-- <img class="card-img-top" src="holder.js/100px180/" alt=""> --}}
         
-        <div class="small timestamp">DATE: {{$ticket->created_at}}
+        <div class="small timestamp"><!-- DATE: {{$ticket->created_at}}-->
         </div>
         <div class="buttons">
             <ul>

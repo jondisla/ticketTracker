@@ -60,7 +60,7 @@ class TicketsController extends Controller
         $ticket->tel = $request->input('tel');
         $ticket->name = $request->input('name');
         $ticket->description = $request->input('description');
-        $ticket->created_at = $request->input('created_at');
+        // $ticket->created_at = $request->input('created_at');
         $ticket->save();
 
         return redirect('tickets')->with('success', 'Ticket Created');
@@ -116,7 +116,7 @@ class TicketsController extends Controller
         $ticket->tel = $request->input('tel');
         $ticket->name = $request->input('name');
         $ticket->description = $request->input('description');
-        $ticket->created_at = $request->input('created_at');
+        // $ticket->created_at = $request->input('created_at');
         $ticket->save();
 
         return redirect('/tickets')->with('success', 'Ticket Updated');
