@@ -20,7 +20,7 @@ class CreateTicketsTable extends Migration
             $table->string('department', 50);
             $table->string('name');
             $table->text('description');
-            $table->timestamp('created_at');
+            // $table->timestamp('created_at');
             // $table->timestamp('updated_at');
         });
     }
